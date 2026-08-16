@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: islamic-quiz
-    runtime: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app
-    envVars:
-      - key: BOT_TOKEN
-        sync: false
